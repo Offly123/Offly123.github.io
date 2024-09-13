@@ -6,45 +6,122 @@
 <body>
     <ul>
         <li><a href="http://kubsu.ru/" id="1">КубГУ</a></li>
-        <li><a href="https://kubsu.ru">КубГУ</a></li>
-        <li><a href="https://kubsu.ru" id="2"><img src="image.jpg" width="50%" height="50%" alt="Здесь картинка"></a></li>
-        <li><a href="/someText.html">Эта страница</a></li>
-        <li><a href="/index.html">Главная страница</a></li>
-        <li><a href="#123123">Jopa</a></li>
-        <li><a id="123154" style="color: #00CC00;font-family:Monotype Corsiva" href="https://www.w3schools.com/html">HTML</a></li>
-        <li><a id="123153" href="https://www.w3schools.com/html">HTML</a></li>
-        <li><a href="/">Относительная сcылка на текущий каталог</a></li>
+        <li><a href="https://kubsu.ru">КубГУ v2.0</a></li>
+        <li><a href="https://kubsu.ru"><img src="image.jpg" width="25%" height="25%" alt="Картинка красивого цветочка"></a></li>
+        <li><a href="./text.html">Сокращённая ссылка на внутреннюю страницу</a></li>
+        <li><a href="./index.html">Сокращённая ссылка на главную страницу</a></li>
+        <li><a href="#123123">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="https://www.w3schools.com/html?One?Two?Three">Ссылка с тремя параметрами</a></li>
+        <li><a id="123123" href="https://www.w3schools.com/html">Ссылка с параметром ID</a></li>
+        <li><a href="./">Относительная сcылка на текущий каталог</a></li>
+        <li><a href="./about/1.html">Относительная сcылка на каталог about</a></li>
         <li><a href="../">Относительная сcылка на каталог уровнем выше</a></li>
-        <li><a href=".../">Относительная сcылка на каталог двумя уровнями выше</a></li>
-        <li>12</li>
-        <li><p>Здесь абзац, а вот и <a href="http://kubsu.ru">ссылка</a></p></li>
-        <li><a href="https://youtu.be/dQw4w9WgXcQ?si=Gq2ITf9IF59UMiNj">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <li><a href="../../">Относительная сcылка на каталог двумя уровнями выше</a></li>
+        <li><p>Абзац со <a href="http://kubsu.ru">ссылкой</a></p></li>
+        <li><a href="https://www.kubsu.ru/index.php#main-content">Ссылка на фрагмент страницы стороннего сайта</a></li>
         <li>
             <map name="primary">
-                <area shape="circle" coords="75,75,75" href="#1" alt="Круг" />
-                <area shape="rect" coords="150,0,350,150" href="#2" alt="Прямоугольник" />
+                <area shape="rect" coords="60,75,150,175" href="#1" alt="Прямоугольник" />
+                <area shape="circle" coords="295,125,45" href="#2" alt="Круг" />
             </map>
-            <img usemap="#primary" src="Final.jpg" width="350" height="250" alt="Финал" />
+            <img usemap="#primary" src="kvadrat_krug.png" width="400" height="250" alt="Квадрат и круг" />
         </li>
-        <li><a href=""></a>Ссылка с пустым href</li>
+        <li><a href="">Ссылка с пустым href</a></li>
         <li><a>Ссылка без href</a></li>
-        <li><a href="https://kubsu.ru" rel="nofollow">Я вам запрещаю переходить</a></li>
-        <li><noindex><a href="https://kubsu.ru">Я вам запрещаю индексировать</a></noindex></li>
+        <li><a href="https://kubsu.ru" rel="nofollow">Ссылка, запрещающая переход браузеру</a></li>
+        <li><!--noindex--><a href="https://kubsu.ru">Ссылка без индексации</a><!--noindex--></li>
         <p1>Топ рецептов для студента:</p1>
         <ol reversed="reversed">
             <li>
-                <a title="Доширак с сосисками" href="https://kubsu.ru">Доширак с сосисками</a><br />
+                <a title="Доширак с сосисками" href="./doshirak.html">Доширак с сосисками</a><br />
                 <img alt="Красивая фотка с дошираком с сосисками" src="doshirak.png" width="20%" height="20%" />
             </li>
             <li>
-                <a title="Макароны с сосисками" href="https://kubsu.ru">Макароны с сосисками</a><br />
+                <a title="Макароны с сосисками" href="./makaroni.html">Макароны с сосисками</a><br />
                 <img alt="Красивая фотка с макаронами" src="makaroshki.png" width="20%" height="20%" />
             </li>
             <li>
-                <a title="Пельмени" href="https://kubsu.ru">Пельмени</a><br />
+                <a title="Пельмени" href="pelmeni.html">Пельмени</a><br />
                 <img alt="Красивая фотка с пельменями" src="pelmeni.jpg" width="20.3%" height="25%" />
             </li>
         </ol>
     </ul>
+
+    <form action="./index.html"
+          method="POST">
+
+        <label>
+            ФИО:<br />
+            <input name="field-name-1"
+                   placeholder="ФИО" />
+        </label><br />
+
+        <label>
+            Телефон:<br />
+            <input name="field-phone-number"
+                   type="phone-number"
+                   placeholder="Номер телефона" />
+        </label><br />
+
+        <label>
+            E-mail:<br />
+            <input name="field-email"
+                   type="email-address"
+                   placeholder="e-mail" />
+        </label><br />
+
+        <label>
+            Дата рождения:<br />
+            <input name="аfield-date"
+                   value="2019-08-13"
+                   type="date" />
+        </label><br />
+
+        Укажите ваш пол:<br />
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-1" value="Значение1" />
+            Мужской
+        </label>
+        <label>
+            <input type="radio"
+                   name="radio-group-1" value="Значение2" />
+            Женский
+        </label><br />
+
+        <label>
+            Любимый язык программирования:
+            <br />
+            <select name="field-name-4[]"
+                    multiple="multiple">
+                <option value="Python">Python</option>
+                <option value="C++">C++</option>
+                <option value="PHP">PHP</option>
+                <option value="Scala">Scala</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Pascal">Pascal</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Java">Java</option>
+                <option value="C">C</option>
+                <option value="Assambler">Assabler</option>
+                <option value="Haskel">Haskel</option>
+            </select>
+        </label><br />
+
+        <label>
+            Краткая биография:<br />
+            <textarea name="biography-field" placeholder="Биография"></textarea>
+        </label><br />
+
+        <label>
+            <input type="checkbox" checked="checked"
+                   name="check-1" />
+            С лицензией ознакомлен(а)
+        </label><br />
+
+        <input id="2" type="submit" value="Сохранить" />
+    </form>
+
 </body>
 </html>
