@@ -1,6 +1,7 @@
 ﻿body
 {
     background-color: #ffd8f2;
+    margin: 0px;
 }
 
 a
@@ -18,53 +19,60 @@ a:hover
     color: #4cff00;
 }
 
-#header-first 
+header
 {
     background-color: #ffbae8;
+    width: 98.9%;
     padding: 10px;
+    margin: 0px auto;
     height: 120px;
-    margin-left: -10px;
-    margin-top: -10px;
-    width: 99.9%;
+}
+
+#header-first {
+    margin: 0px auto 0 auto;
+    background-color: #ffbae8;
+    max-width: 960px;
 }
 
 #header-second 
 {
+    margin: 0 0 0 10px;
+    max-width: 200px;
+    float: left;
     background-color: #ff94db;
-    padding: 10px;
-    margin-left: 125px;
-    margin-top: 10px;
-    max-width: 220px;
-    height: 80px;
+    display: block;
 }
 
 #header-png 
 {
     float: left;
-    margin-left: 10px;
-    margin-top: 10px;
     width: 100px;
     height: 100px;
-    background-attachment: scroll;
+}
+
+#page-name
+{
+    text-align: center;
+    height: auto;
+    margin: 85px auto 0 auto;
+    background-color: #ff94db;
+    max-width: 300px;
 }
 
 #header-navigation 
 {
-    margin: -120px auto;
-    max-height: 30px;
-    max-width: 960px;
-    width: 960px;
-    padding: 0px;
+    padding: 5px;
+    float: right;
+    display: block;
+    max-height: 100px;
     background-color: #ff94db;
-    text-align: center;
 }
 
 #block {
     width: 300px;
     max-height: 120px;
     background-color: #ff94db;
-    margin-left: 1500px;
-    margin-top: -140px;
+    display: inline;
     padding: 10px;
     line-height: 1.5;
     position: fixed;
@@ -76,7 +84,7 @@ a:hover
     padding-left: 25px;
     margin: 20px auto;
     background-color: #ffbae8;
-    max-width: 1000px;
+    max-width: 960px;
     padding-bottom: 10px;
 }
 
@@ -84,14 +92,13 @@ a:hover
     padding: 10px;
     margin: 20px auto;
     background-color: #ffbae8;
-    max-width: 1006px;
+    max-width: 960px;
     padding-bottom: 10px;
     text-align: center;
     overflow-x: auto;
 }
 
 .sometable {
-    width: 100%;
     border: 3px solid;
     border-collapse: collapse;
     border-spacing: 0;
@@ -116,15 +123,14 @@ a:hover
     padding-bottom: 10px;
     padding-left: 25px;
     background-color: #ffbae8;
-    max-width: 1000px;
+    max-width: 960px;
     text-align: center;
 }
 
 #footer 
 {
-    width: 99.9%;
+    width: 98.9%;
     background-color: #ffbae8;
-    margin: auto 0px -10px -10px;
     padding: 10px;
     text-align: center;
     bottom: 0;
