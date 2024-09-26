@@ -40,8 +40,8 @@ header {
 
 #header-png {
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
 }
 
 #page-name {
