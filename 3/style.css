@@ -33,15 +33,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: left;
+    justify-content: left;
     margin: 0px auto 0 auto;
     background-color: #ffbae8;
-}
-
-#header-second {
-    margin: 0 0 0 10px;
-    float: left;
-    background-color: #ff94db;
-    display: block;
 }
 
 #header-png {
@@ -161,14 +155,6 @@ footer {
         margin: 0px auto 0 auto;
         background-color: #ffbae8;
         max-width: 960px;
-    }
-
-    #header-second {
-        margin: 0 0 0 10px;
-        max-width: 200px;
-        float: left;
-        background-color: #ff94db;
-        display: block;
     }
 
     #header-png {
