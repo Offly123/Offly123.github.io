@@ -39,6 +39,12 @@ header {
     height: 10vw;
 }
 
+#page-name-1 {
+    flex: 10;
+    align-content: end;
+    text-align: center;
+}
+
 #page-name-2 {
     text-align: center;
     height: auto;
