@@ -31,10 +31,7 @@ header {
 
 #header-first {
     display: flex;
-    flex-direction: column;
     justify-content: left;
-    justify-content: left;
-    margin: 0px auto 0 auto;
     background-color: #ffbae8;
 }
 
@@ -57,6 +54,8 @@ header {
     float: right;
     max-height: 100px;
     background-color: #ff94db;
+    width: auto;
+    height: auto;
 }
 
 #main {
