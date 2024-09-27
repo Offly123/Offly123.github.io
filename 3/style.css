@@ -20,7 +20,7 @@ a:hover {
 header {
     order: 0;
     background-color: #ffbae8;
-    width: 98vw;
+    width: 100vw;
     padding: 1vw;
     margin: 0px auto;
 }
@@ -33,7 +33,7 @@ header {
 }
 
 #header-png-2{
-    width: 10vw;
+    width: 100vw;
     height: 10vw;
 }
 
@@ -47,7 +47,7 @@ header {
     text-align: center;
     height: auto;
     background-color: #ff94db;
-    max-width: 300px;
+    max-width: 30vw;
     width: auto;
 }
 
@@ -65,7 +65,7 @@ header {
     padding: 1vw;
     margin: 20px auto;
     background-color: #ffbae8;
-    width: 98vw;
+    width: 100vw;
 }
 
 #main-table {
@@ -73,7 +73,7 @@ header {
     padding: 1vw;
     margin: 20px auto;
     background-color: #ffbae8;
-    width: 98vw;
+    width: 100vw;
     text-align: center;
     overflow-x: auto;
 }
@@ -101,13 +101,13 @@ header {
     margin: 20px auto;
     padding: 1vw;
     background-color: #ffbae8;
-    width: 98vw;
+    width: 100vw;
     text-align: center;
 }
 
 footer {
     order: 5;
-    width: 103vw;
+    width: 100vw;
     background-color: #ffbae8;
     padding: 1vw;
     text-align: center;
