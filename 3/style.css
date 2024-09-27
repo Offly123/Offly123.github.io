@@ -76,7 +76,7 @@ header {
     padding: 10px;
     margin: 20px auto;
     background-color: #ffbae8;
-    width: 960px;
+    width: 100vw;
     padding-bottom: 10px;
     text-align: center;
     overflow-x: auto;
@@ -107,13 +107,13 @@ header {
     padding-bottom: 10px;
     padding-left: 25px;
     background-color: #ffbae8;
-    width: 960px;
+    width: 100vw;
     text-align: center;
 }
 
 footer {
     order: 5;
-    width: 98.9%;
+    width: 100vw;
     background-color: #ffbae8;
     padding: 10px;
     text-align: center;
