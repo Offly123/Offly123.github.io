@@ -20,7 +20,7 @@ a:hover {
 header {
     order: 0;
     background-color: #ffbae8;
-    width: 99vw;
+    width: 98vw;
     padding: 1vw;
     margin: 0px auto;
 }
@@ -65,7 +65,7 @@ header {
     padding: 1vw;
     margin: 20px auto;
     background-color: #ffbae8;
-    width: 99vw;
+    width: 98vw;
 }
 
 #main-table {
@@ -73,7 +73,7 @@ header {
     padding: 1vw;
     margin: 20px auto;
     background-color: #ffbae8;
-    width: 99vw;
+    width: 98vw;
     text-align: center;
     overflow-x: auto;
 }
@@ -101,13 +101,13 @@ header {
     margin: 20px auto;
     padding: 1vw;
     background-color: #ffbae8;
-    width: 99vw;
+    width: 98vw;
     text-align: center;
 }
 
 footer {
     order: 5;
-    width: 99vw;
+    width: 100vw;
     background-color: #ffbae8;
     padding: 1vw;
     text-align: center;
