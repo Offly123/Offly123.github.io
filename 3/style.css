@@ -20,9 +20,9 @@ a:hover {
 }
 
 header {
+    width: 100vw;
     order: 0;
     background-color: #ffbae8;
-    width: 98.9%;
     padding: 2vw;
     margin: 0px auto;
 }
@@ -67,7 +67,7 @@ header {
     padding-left: 40px;
     margin: 20px auto;
     background-color: #ffbae8;
-    width: 960px;
+    width: 100vw;
     padding-bottom: 10px;
 }
 
