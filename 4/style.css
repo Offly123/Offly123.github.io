@@ -15,7 +15,7 @@ a:hover {
     border: 3px solid;
     border-collapse: collapse;
     border-spacing: 0;
-    background-color: #ffbae8;
+    background-color: #EEaaEE;
     margin: 20px auto;
 }
 
@@ -25,9 +25,9 @@ a:hover {
     padding: 4px 8px;
 }
 
-.sometable tr:nth-of-type(even) {
-    background-color: #ff94db;
-}
+    .sometable tr:nth-of-type(even) {
+        background-color: #EE82EE;
+    }
 
 #img-1 {
     width: 40vw;
