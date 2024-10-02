@@ -50,7 +50,7 @@ a:hover {
 
 @media screen and (min-device-width: 768.98px) {
 
-    #main {
+    #main1 {
         order: 1;
     }
 
@@ -58,7 +58,7 @@ a:hover {
         order: 2;
     }
 
-    #form {
+    #form1 {
         order: 3;
     }
 
