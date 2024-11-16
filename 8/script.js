@@ -41,6 +41,9 @@ $(document).ready(function() {
     window.localStorage.setItem(event.target.name, event.target.value);
   }
   
+  $("#submitForm").click(function() {
+    window.localStorage.clear();
+  });
   
   $(function(){
     $(".formcarryForm").submit(function(e){
