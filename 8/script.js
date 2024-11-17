@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   function playSound(sound) {
     var song = document.getElementById("sound");
-    song.volume = 1;
+    song.volume = 0.5;
     if (song.paused) {
       song.play();
     } else {
