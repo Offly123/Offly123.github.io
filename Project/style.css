@@ -1,0 +1,156 @@
+﻿@font-face {
+    font-family: "Manrope";
+    src: url("./fonts/Manrope-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: #131313;
+    color: #ffffff;
+}
+
+#headerBackgroundVideo {
+    width: 100%;
+    margin: -200px 0 0 0;
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes kostyli {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(12deg);}
+    1000% {transform: rotate(0deg);}
+}
+
+#headerBackgroundImage {
+    transform: rotate(0deg);
+    position: absolute;
+    z-index: -1;
+    height: 400px;
+    margin: -50px 0 0 50px;
+    animation-name: kostyli;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Manrope";
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 70px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #a723ff;
+    height: 200px;
+}
+
+#title {
+    margin: 0 0 0 20px;
+    display: table;
+    text-wrap: nowrap;
+}
+
+#title span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.accordion {
+    width: 100vw;
+}
+
+.accordion ul {
+    background-color: #a723ff;
+    padding: 7px 15px;
+    margin: 0;
+    font: bold 120%/100% Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+}
+
+#menu div {
+    margin: 18px 0 0 0;
+}
+
+.menu-item {
+    padding: 1vw 1vw 0 2vw;
+    text-decoration: underline 0.3vw;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.35vw;  
+    animation-duration: 0.5s;
+    text-wrap: nowrap;
+}
+
+@keyframes menuUnderlineShow {
+    from {text-decoration-color: transparent;}
+    to {text-decoration-color: #a723ff;}
+}
+
+@keyframes menuUnderlineHide {
+    from {text-decoration-color: #a723ff;}
+    to {text-decoration-color: transparent;}
+}
+
+a {
+    color: #ffffff;
+}
+
+#menuMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    #menu {
+        flex-direction: column;
+        margin: 0 10px 0 0;
+    }
+
+    #menu div {
+        margin: 0;
+        height: 60px;
+        justify-content: center;
+    }
+
+    .menu-item {
+        padding: 0;
+        font-size: 30px;
+        text-decoration: underline 3px;
+        text-decoration-color: transparent;
+        text-underline-offset: 0.35vw;
+    }
+
+    #menuMobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #header
+
+    header {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        justify-content: start;
+    }
+
+    #menuMobile {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+}
