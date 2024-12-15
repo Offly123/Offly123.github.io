@@ -85,9 +85,9 @@ header {
 
 .menu-item {
     padding: 1vw 1vw 0 2vw;
-    text-decoration: underline 0.3vw;
+    text-decoration: underline 4px;
     text-decoration-color: transparent;
-    text-underline-offset: 0.35vw;  
+    text-underline-offset: 3px;  
     animation-duration: 0.5s;
     text-wrap: nowrap;
 }
