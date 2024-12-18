@@ -22,13 +22,18 @@ $(document).ready(function() {
     $("#menuMobileButton").click(function() {
         $(".menuMobileItem").toggle();
     });
-});
 
-$(document).ready(function() {
-   $(".accordion hehe").hide();
-   $(".accordion ul").click(function () {
-     $(this).next("").slideToggle("slow")
-       .siblings("p:visible").slideUp("slow");
-   });
-  
-  }); 
+    $(".gallery").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        responsive: [ {
+            breakpoint: 900, 
+            settings: {
+                slidesToShow: 1,
+                }
+            },
+        ]
+    });
+
+});
