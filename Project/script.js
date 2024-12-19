@@ -28,7 +28,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplaySpeed: 2000,
         responsive: [ {
-            breakpoint: 900, 
+            breakpoint: 901,
             settings: {
                 slidesToShow: 1,
                 }

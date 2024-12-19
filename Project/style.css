@@ -104,7 +104,7 @@ a {
 
 .dropdown-btn .dropdown-menu {
     border-radius: 0;
-    margin: -10px 0 0 30px;
+    margin: -10px 0 0 25px;
     padding: 0;
     display: none;
     background-color: #a723ff;
@@ -125,9 +125,10 @@ a {
 main {
     display: flex;
     flex-direction: column;
-    background-color: #131313; 
-    padding-top: 10px;
+    align-content: start;
     align-items: center;
+    padding-top: 10px;
+    background-color: #131313; 
 }
 
 .gallery {
@@ -159,6 +160,27 @@ main {
 
 footer {
     border-top: 4px solid #a723ff;
+    position: relative;
+    display: flex;
+}
+
+#footerContent {
+    margin: 0 0 0 5vw;
+}
+
+.footerText {
+    font-size: 40px;    
+    font-weight: 650;
+}
+
+#footerBackground {
+    position: relative;
+    z-index: -1;
+}
+
+.footerButtonImage {
+    position: absolute;
+    width: 40px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -210,6 +232,16 @@ footer {
         cursor:pointer;
         width: 300px;
     }
+
+    .footerText {
+        font-size: 30px;    
+        font-weight: 650;
+    }
+
+    .footerButtonImage {
+        position: absolute;
+        width: 3.3vw;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -249,12 +281,12 @@ footer {
     }
 
     #menuMobile {
+        display: flex;
+        align-content: center;
         width: 100%;
         margin: 0 -3vw 0 0;
         font-weight: 700;
         list-style-type: none;
-        display: flex;
-        flex-direction: row;
         line-height: 4vw;
         font-size: 4.3vw;
         background-color: #a723ff;
@@ -266,6 +298,7 @@ footer {
     }
     
     #menuMobile ul {
+        margin: 0;
         flex: 1;
         padding: 0;
     }
@@ -310,5 +343,10 @@ footer {
     #formButton {
         cursor:pointer;
         width: 200px;
+    }
+
+    .footerText {
+        font-size: 4vw;    
+        font-weight: 650;
     }
 }
