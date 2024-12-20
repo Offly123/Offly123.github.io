@@ -26,7 +26,6 @@ $(document).ready(function() {
     $(".gallery").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplaySpeed: 2000,
         responsive: [ {
             breakpoint: 901,
             settings: {
