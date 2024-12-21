@@ -165,12 +165,14 @@ main {
 
 footer {
     border-top: 4px solid #a723ff;
-    position: relative;
     display: flex;
 }
 
 #footerContent {
-    margin: 0 0 0 5vw;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin: 0 0 0 30px;
 }
 
 .footerText {
@@ -178,13 +180,12 @@ footer {
     font-weight: 650;
 }
 
-#footerBackground {
-    position: relative;
-    z-index: -1;
+.footerButtons {
+    display: flex;
 }
 
 .footerButtonImage {
-    position: absolute;
+    margin: 0 10px 0 0;
     width: 40px;
 }
 
@@ -244,8 +245,8 @@ footer {
     }
 
     .footerButtonImage {
-        position: absolute;
-        width: 3.3vw;
+        margin: 0 10px 0 0;
+        width: 30px;
     }
 }
 
@@ -350,8 +351,32 @@ footer {
         width: 200px;
     }
 
+    footer {
+        border-top: 4px solid #a723ff;
+        display: flex;
+        height: 11vw;
+    }
+    
+    #footerContent {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 0 0 1vw;
+    }
+
     .footerText {
-        font-size: 4vw;    
+        font-size: 5vw;    
         font-weight: 650;
+    }
+    
+    .footerButtons {
+        margin: 0 0 0 2vw;
+        display: flex;
+    }
+    
+    .footerButtonImage {
+        margin: 0 1vw 0 0;
+        width: 6vw;
     }
 }
