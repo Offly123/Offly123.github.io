@@ -1,13 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
-@font-face {
+﻿@font-face {
     font-family: "Manrope";
     src: url("./fonts/Manrope-VariableFont_wght.ttf");
 }
@@ -43,6 +34,11 @@ body {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 4s;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -106,182 +102,70 @@ a {
     display: none;
 }
 
-nav {
-    display: flex;
-    text-wrap: nowrap;
-    justify-content: end;
-    justify-items: end;
-    height: fit-content;
-    margin: 18px 0 0 0;
-    font-size: 30px;
-}
-
-nav .nav-item {
-    text-align: end;
-    height: 40px;
-    margin: 10px 20px 0 0;
-    padding: 0 0 60px 0;
-}
-
-nav .nav-item span {
-    text-decoration: underline 4px;
-    text-underline-offset: 3px;
-    text-decoration-color: transparent;
-    transition: text-decoration-color 0.5s;
-}
-
-nav .nav-item :hover {
-    text-decoration-color: #a723ff;
-}
-
-.dropdown {
-    text-decoration: underline 4px;
-    text-underline-offset: 3px;
-    text-decoration-color: transparent;
-    transition: text-decoration-color 0.5s;
-}
-
-.dropdown:hover {
-    text-decoration-color: #a723ff;
-}
-
-.dropdown-wrapper {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 10px;
-    visibility: hidden;
-    position: absolute;
-    top: 95%;
+.dropdown-btn .dropdown-menu {
+    border-radius: 0;
+    margin: -10px 0 0 25px;
+    padding: 0;
+    display: none;
     background-color: #a723ff;
-}
-
-.show {
-    visibility: unset;
-    animation: fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-.hide {
-    visibility: hidden;
-    animation: fadeOut 0.5s;
-}
-
-@keyframes fadeOut {
-    from {opacity: 1; visibility: unset;}
-    to {opacity: 0; visibility: hidden;}   
-}
-
-.dropdown .dropdown-item {
-    line-height: 35px;
     font-size: 30px;
-    font-weight: 800;
+}
+
+.dropdown-btn:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-btn .dropdown-content {
+    color: #ffffff;
+    padding: 20px 5px;
+    line-height: 0px;
+    height: 30px;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    padding: 25px;
-    font-size: 20px;
-    font-weight: 650;
+    align-content: start;
+    align-items: center;
+    padding-top: 10px;
     background-color: #131313; 
 }
 
-.our-team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+.gallery {
+    width: calc(100vw - 70px);
 }
 
-.our-team p {
-    font-size: 50px;
+.gallery .galleryPhoto {
+    width: 10vw;
 }
 
-.about-us-text img{
-    float: right;
-    width: 400px;
-}
-
-.card-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card-item {
-    margin: 10px;
-    border: 4px solid #a723ff;
-    border-radius: 15px;
-    justify-items: center;
-    padding: 10px;
-    transition: background-color 0.5s;
-}
-
-.card-item:hover {
-    background-color: #252525;
-}
-
-.card-item img {
-    width: 300px;
-    height: 250px;
-}
-
-.card-item p {
-    font-size: 30px;
-}
-
-.card-item div {
-    width: 320px;
-}
-
-.companies {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-}
-
-.companies div p {
-    font-size: 50px;
-}
-
-.companies-gallery {
-    display: flex;
-    align-content: center;
-    padding: 30x;
-}
-
-.companies-image {
-    transition: background-color 0.5s;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
-}
-
-.companies-image:hover {
-    background-color: #252525;
-}
-
-.companies-image img {
-    max-height: 10vw;
-    max-width: 25vw;
+.gallery img {
+    width: 33vw;
     justify-self: center;
+}
+
+.formButton {
+    width: 40vw;
+    height: calc(40vw / 3.1);
+    cursor:pointer;
+    background-image: url("./images/body_buttonFightNotAvaliable.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #131313;
+}
+
+.formButton:hover {
+    background-image: url("./images/body_buttonFightAvaliable.png");
 }
 
 footer {
     border-top: 4px solid #a723ff;
+    position: relative;
     display: flex;
 }
 
 #footerContent {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 5vw;
 }
 
 .footerText {
@@ -289,30 +173,34 @@ footer {
     font-weight: 650;
 }
 
-.footerButtons {
-    display: flex;
+#footerBackground {
+    position: relative;
+    z-index: -1;
 }
 
 .footerButtonImage {
-    margin: 0 10px 0 0;
+    position: absolute;
     width: 40px;
 }
 
 @media only screen and (max-width: 1200px) {
+    #menu {
+        flex-direction: column;
+        margin: 0 10px 0 0;
+    }
 
-    nav {
-        flex-direction: column-reverse;
+    #menu .menu-text {
+        margin: 0;
+        height: 60px;
+        justify-content: center;
     }
-    
-    nav .nav-item {
-        line-height: 0;
+
+    .menu-item {
         padding: 0;
-        margin-top: 20px;
-    }
-    
-    .dropdown-wrapper {
-        top: 56%;
-        text-align: right;
+        font-size: 30px;
+        text-decoration: underline 3px;
+        text-decoration-color: transparent;
+        text-underline-offset: 0.35vw;
     }
 
     #menuMobile {
@@ -339,6 +227,11 @@ footer {
         line-height: 0px;
         height: 30px;
     }
+    
+    #formButton {
+        cursor:pointer;
+        width: 300px;
+    }
 
     .footerText {
         font-size: 30px;    
@@ -346,8 +239,8 @@ footer {
     }
 
     .footerButtonImage {
-        margin: 0 10px 0 0;
-        width: 30px;
+        position: absolute;
+        width: 3.3vw;
     }
 }
 
@@ -385,10 +278,6 @@ footer {
     #title span {
         display: table-cell;
         vertical-align: middle;
-    }
-
-    nav {
-        display: none;
     }
 
     #menuMobile {
@@ -438,86 +327,26 @@ footer {
         justify-content: center;
     }
 
-    .about-us-text {
-        font-size: 3vw;
-    }
-
-    .our-team p {
-        font-size: 5vw;
-    }
-
-    .about-us-text img {
-        width: 40vw;
-        float: right
+    .gallery {
+        width: calc(100vw - 70px);
     }
     
-    .card-item {
-        margin: 10px;
-        border: 4px solid #a723ff;
-        border-radius: 15px;
-        justify-items: center;
-        padding: 10px;
-        transition: background-color 0.5s;
+    .gallery .galleryPhoto {
+        width: 10vw;
     }
     
-    .card-item:hover {
-        background-color: #252525;
-        transition: background-color 0.5s;
-    }
-    
-    .card-item img {
-        width: 50vw;
-        height: 40vw;
-    }
-    
-    .card-item p {
-        font-size: 4vw;
-    }
-    
-    .card-item div {
-        font-size: 3vw;
-        width: 45vw;
-    }
-
-    .companies {
-        font-size: 3vw;
-    }
-
-    .companies div p {
-        font-size: 5vw;
-    }
-
-    .companies img {
+    .gallery img {
+        width: 70vw;
         justify-self: center;
-        width: 30vw;
-    }
-
-    footer {
-        border-top: 4px solid #a723ff;
-        display: flex;
-        height: 11vw;
     }
     
-    #footerContent {
-        display: flex;
-        align-self: center;
-        align-items: center;
-        flex-direction: row;
-        margin: 0 0 0 1vw;
+    #formButton {
+        cursor:pointer;
+        width: 200px;
     }
 
     .footerText {
-        font-size: 5vw;    
+        font-size: 4vw;    
         font-weight: 650;
-    }
-    
-    .footerButtons {
-        margin: 0 0 0 2vw;
-        display: flex;
-    }
-    
-    .footerButtonImage {
-        margin: 0 1vw 0 0;
-        width: 6vw;
     }
 }

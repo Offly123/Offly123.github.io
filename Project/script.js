@@ -1,24 +1,14 @@
 $(document).ready(function() {
-    $(".menu-item").mouseenter(function() {
-        $(this).css({
-            animationName: "menuUnderlineShow",
-            textDecorationColor: "#a723ff",
-        });
+    $(".dropdown").mouseenter(function() {
+        $(".dropdown-wrapper").addClass("show");
+        $(".dropdown-wrapper").removeClass("hide");
     });
-
-    $(".menu-item").mouseleave(function() {
-        $(this).css({
-            animationName: "menuUnderlineHide",
-            textDecorationColor: "transparent",
-        });
+    $(".dropdown").mouseleave(function() {
+        $(".dropdown-wrapper").addClass("hide");
+        $(".dropdown-wrapper").removeClass("show");
     });
 
     $(".menuMobileItem").hide();
-
-    $(".navigation-button").click(function() {
-        toggleClass(document.getElementById('navigation-dropdown'), "hide");
-    });
-
     $("#menuMobileButton").click(function() {
         $(".menuMobileItem").toggle();
     });
