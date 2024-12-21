@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $(".companies-gallery1").slick({
+    $(".companies-gallery").slick({
+        speed: 4000,
+        cssEase: 'ease-in-out',
         pauseOnHover: false,
         pauseOnDotsHover: false,
         pauseOnFocus: false,
@@ -7,43 +9,7 @@ $(document).ready(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        responsive: [ {
-            breakpoint: 901,
-            settings: {
-                slidesToShow: 2,
-                }
-            },
-        ]
-    });
-    $(".companies-gallery2").slick({
-        pauseOnHover: false,
-        pauseOnDotsHover: false,
-        pauseOnFocus: false,
-        swipe: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        responsive: [ {
-            breakpoint: 901,
-            settings: {
-                slidesToShow: 2,
-                }
-            },
-        ]
-    });
-    $(".companies-gallery3").slick({
-        pauseOnHover: false,
-        pauseOnDotsHover: false,
-        pauseOnFocus: false,
-        swipe: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         arrows: false,
         responsive: [ {
             breakpoint: 901,

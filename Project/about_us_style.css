@@ -135,6 +135,17 @@ main {
     background-color: #131313; 
 }
 
+.our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.our-team p {
+    font-size: 50px;
+}
+
 .about-us-text img{
     float: right;
     width: 400px;
@@ -157,7 +168,6 @@ main {
 
 .card-item:hover {
     background-color: #252525;
-    transition: background-color 0.5s;
 }
 
 .card-item img {
@@ -179,8 +189,26 @@ main {
     margin: 10px 0;
 }
 
+.companies-gallery {
+    display: flex;
+    align-content: center;
+    padding: 30x;
+}
+
+.companies-image {
+    transition: background-color 0.5s;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.companies-image:hover {
+    background-color: #252525;
+}
+
 .companies-image img {
-    width: 200px;
+    max-height: 10vw;
+    max-width: 25vw;
     justify-self: center;
 }
 
@@ -350,6 +378,10 @@ footer {
 
     .about-us-text {
         font-size: 3vw;
+    }
+
+    .our-team p {
+        font-size: 5vw;
     }
 
     .about-us-text img {
