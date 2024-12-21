@@ -26,3 +26,15 @@ $(document).ready(function() {
     });
 
 });
+
+function reklama() { 
+    let myToastEl = document.getElementById("liveToast"); 
+    let myToast = bootstrap.Toast.getOrCreateInstance(myToastEl); 
+    if (myToast["_element"].classList[2] !== "show") { 
+        myToast.show(); 
+    }
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+    this.setInterval(reklama, 5000);
+});
