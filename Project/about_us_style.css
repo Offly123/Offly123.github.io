@@ -189,6 +189,10 @@ main {
     margin: 10px 0;
 }
 
+.companies div p {
+    font-size: 50px;
+}
+
 .companies-gallery {
     display: flex;
     align-content: center;
@@ -420,6 +424,10 @@ footer {
 
     .companies {
         font-size: 3vw;
+    }
+
+    .companies div p {
+        font-size: 5vw;
     }
 
     .companies img {
