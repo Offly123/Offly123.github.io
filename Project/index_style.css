@@ -125,17 +125,17 @@ nav .nav-item :hover {
 }
 
 .showDropdown {
-    visibility: unset !important;
+    visibility: unset;
     animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
-    from {opacity: 0; visibility: hidden;}
-    to {opacity: 1; visibility: unset;}
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .hideDropdown {
-    visibility: hidden !important; 
+    visibility: hidden;
     animation: fadeOut 0.5s;
 }
 
