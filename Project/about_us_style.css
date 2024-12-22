@@ -489,7 +489,7 @@ footer {
 
     .companies img {
         justify-self: center;
-        width: 30vw;
+        max-width: 30vw;
     }
 
     footer {

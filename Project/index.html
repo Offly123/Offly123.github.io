@@ -10,7 +10,9 @@
     <script defer src="./includes/jquery-3.4.1.min.js"></script>
     <script defer type="text/javascript" src="./includes/slick/slick.min.js"></script>
     <script defer src="script.js"></script>
+    <script defer src="formscript.js"></script>
     <title>Поддержка сайтов на костылях</title>
+    <audio id="sound"><source src="sounds/probitiye.mp3" type="audio/mp3"></audio>
 </head>
 <body>
     <video id="headerBackgroundVideo" loop="loop" autoplay="autoplay" preload="auto" muted>
@@ -18,6 +20,7 @@
         <source src="./images/header_background.webm" type="video/webm"></source>
     </video>
     <img id="headerBackgroundImage" src="./images/header_kostyl.png">
+    
     <header>
         <div id="title">
             <span>
@@ -65,13 +68,13 @@
                 <p>контакты</p>
                 <ul style="padding: 0 2vw;">
                     <li>
-                        <p>внеконтакта</p>
+                        <a href="https://www.youtube.com/watch?v=nGBYEUNKPmo">внеконтакта</a>
                     </li>
                     <li>
-                        <p>телетонна</p>
+                        <a href="https://www.youtube.com/watch?v=nGBYEUNKPmo">телетонна</a>
                     </li>
                     <li>
-                        <p>гитангар</p>
+                        <a href="https://www.youtube.com/watch?v=nGBYEUNKPmo">гитангар</a>
                     </li>
                 </ul>
             </li>
@@ -87,34 +90,69 @@
     </div>
 
     <main>
-        <div class="formButton"></div>
+        <button type="button" class="btn formOpenButton" id="showFormBtn" data-bs-toggle="modal" data-bs-target="#modalForm"></button>
+        <div class="modal modal-lg" id="modalForm" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center" style="background-color: #131313;">
+                        <h1 id="catchMeIfYouCan">Заполните форму</h1>
+                    </div>
+                    <div class="modal-body" style="background-color: #131313;">
+                        <form action="https://formcarry.com/s/kUVwgbx91Qt" class="formcarryForm">
+                            Имя аккаунта:
+                            <input type="text" class="form-control mb-3" placeholder="DallbenKorass" name="account-name" required>
+                            Пароль:
+                            <input type="text" class="form-control mb-3" placeholder="123456789" name="password" required>
+    
+                            e-mail:
+                            <input type="text" class="form-control mb-3" placeholder="example@somemail.com" name="email" required>
+    
+                            Телефон:
+                            <input type="text" class="form-control mb-3" placeholder="88005553535" name="phone-number" required>
+    
+                            Клан:
+                            <input type="text" class="form-control mb-3" placeholder="MERCY" name="clan">
+    
+                            <input class="form-check-input mb-5" type="checkbox" value="hehe" required>
+                            С политикой кражи персональных данных согласен(на)<br>
+    
+                            <button type="submit" class="btn" id="submitForm" style="background-color: #ffffff;">Отправить</button>
+                        </form>            
+                    </div>
+                    <div class="modal-footer" style="background-color: #131313;">
+                        <button type="button" class="btn btn-danger" id="hideFormBtn" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="gallery">
             <div class="galleryPhoto">
                 <img src="images/tank1.png" alt="tank1">
-            </div>
+            </div>    
             <div class="galleryPhoto">
                 <img src="images/tank2.png" alt="tank2">
-            </div>
+            </div>    
             <div class="galleryPhoto">
                 <img src="images/tank3.png" alt="tank3">
-            </div>
+            </div>    
             <div class="galleryPhoto">
                 <img src="images/tank4.png" alt="tank4">
-            </div>
+            </div>    
             <div class="galleryPhoto">
                 <img src="images/tank5.png" alt="tank5">
-            </div>
-        </div>
+            </div>    
+        </div>    
 
         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11"> 
             <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"> 
                 <div class="toast-header"> 
                     <strong class="me-auto">Анна</strong> 
-                    <small>22 метра от вас</small> 
+                    <small>1 метр от вас</small> 
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> 
                 </div> 
                 <div class="toast-body"> 
-                    <img src="https://i.ytimg.com/vi/5MywFH5gHhk/maxresdefault.jpg" class="rounded me-2 w-100" alt="..."> 
+                    <img src="images/vladolga.jpg" class="rounded me-2 w-100" alt="..."> 
                 </div> 
             </div> 
         </div>
@@ -145,11 +183,3 @@
     </footer>
 </body>
 </html>
-
-<script>
-    // When the user clicks on <div>, open the popup
-    function myFunction() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
-    </script>

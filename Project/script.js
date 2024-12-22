@@ -1,11 +1,11 @@
 $(document).ready(function() {
     $(".dropdown").mouseenter(function() {
-        $(".dropdown-wrapper").addClass("show");
-        $(".dropdown-wrapper").removeClass("hide");
+        $(".dropdown-wrapper").addClass("showDropdown");
+        $(".dropdown-wrapper").removeClass("hideDropdown");
     });
     $(".dropdown").mouseleave(function() {
-        $(".dropdown-wrapper").addClass("hide");
-        $(".dropdown-wrapper").removeClass("show");
+        $(".dropdown-wrapper").addClass("hideDropdown");
+        $(".dropdown-wrapper").removeClass("showDropdown");
     });
 
     $(".menuMobileItem").hide();
@@ -26,7 +26,6 @@ $(document).ready(function() {
     });
 
     window.setInterval(reklama, 5000);
-
     function reklama() { 
         let myToastEl = document.getElementById("liveToast"); 
         let myToast = bootstrap.Toast.getOrCreateInstance(myToastEl); 
