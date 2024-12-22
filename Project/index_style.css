@@ -355,6 +355,44 @@ footer {
         width: 200px;
     }
 
+    .modal-header {
+        height: 7vw;
+        font-size: 1vw;
+        border-bottom: 4px solid #a723ff;
+    }
+
+    .modal-header h1 {
+        font-size: 5vw;
+    }
+
+    .modal-body {
+        height: 70vw;
+    }
+
+    .formcarryForm {
+        font-size: 3vw;
+    }
+
+    .form-control {
+        padding: 1vw;
+        height: 4vw;
+        font-size: 2vw;
+        border: 2px solid #a723ff;
+    }
+
+    #submitForm {
+        height: 6vw;
+        font-size: 3vw;
+        padding: 0;
+    }
+
+    #hideFormBtn {
+        height: 6vw;
+        width: 10vw;
+        font-size: 3vw;
+        padding: 0;
+    }
+
     footer {
         border-top: 4px solid #a723ff;
         display: flex;
