@@ -375,7 +375,7 @@ footer {
 
     .form-control {
         padding: 1vw;
-        height: 4vw;
+        height: 6vw;
         font-size: 2vw;
         border: 2px solid #a723ff;
     }
@@ -390,7 +390,7 @@ footer {
         height: 6vw;
         width: 10vw;
         font-size: 3vw;
-        padding: 0;
+        padding: 0  ;
     }
 
     footer {
